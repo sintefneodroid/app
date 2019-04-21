@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">Neodroid</string>
+  <string name="send">Send</string>
+  <string name="please_enter_a_message">Please enter a message</string>
+  <string name="action_settings">Settings</string>
+  <string name="exit">Exit</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".GyroActivity"
+    tools:deviceIds="wear">
+  
+<androidx.constraintlayout.widget.ConstraintLayout
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             app:layout_box="all"
+                                             >
+
+  <ImageView
+      android:id="@+id/image_observation"
+      android:layout_width="224dp"
+      android:layout_height="224dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:srcCompat="@tools:sample/backgrounds/scenic"/>
+
+  <View
+      android:id="@+id/imageView_gyro"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="8dp"
+
+      android:background="@android:color/holo_orange_dark"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <LinearLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#8F25251F"
+      android:gravity="center"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/text_observation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="obs"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/text_reaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="reac"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorAccent"
+        />
+  </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.wear.widget.BoxInsetLayout>

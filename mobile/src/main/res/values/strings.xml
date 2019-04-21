@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">Neodroid</string>
+
+  <string name="connect">Connect</string>
+
+  <string name="default_port">6969</string>
+  <string name="default_address">192.168.1.145</string>
+  <string name="test">Test</string>
+</resources>
